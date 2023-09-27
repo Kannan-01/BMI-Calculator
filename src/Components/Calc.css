@@ -32,35 +32,49 @@
   height: 325px;
   background-color: #32de84;
 }
-
-/* card section */
-.card {
-    height: 525px;
-    width: 350px;
-    background-color: white;
-    position: relative;
-  }
-  .card-container{
+@media (max-width: 480px) {
+  .container {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 100px 0px;
+    flex-direction: column;
+  }
+  .banner-rest {
+    display: none;
+  }
+  .banner {
+    width: 350px;
+    height: 300px;
+    background-color: #32de84;
   }
 
-  /* rendered div */
-  .render-div{
-    margin-top: 30px;
-    font-family: "Kanit", sans-serif;
-    font-size: 25px;
-    color: rgb(107, 101, 101);
-  }
-  .render-div>h1>span{
-    margin-top: 30px;
-    margin-left: 5px;
-    font-family: "Kanit", sans-serif;
-    font-size: 20px;
-    color: grey;
-  }
-  
+}
+/* card section */
+.card {
+  height: 525px;
+  width: 350px;
+  background-color: white;
+  position: relative;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0px;
+}
 
+/* rendered div */
+.render-div {
+  margin-top: 30px;
+  font-family: "Kanit", sans-serif;
+  font-size: 25px;
+  color: rgb(107, 101, 101);
+}
+.render-div > h1 > span {
+  margin-top: 30px;
+  margin-left: 5px;
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  color: grey;
+}
